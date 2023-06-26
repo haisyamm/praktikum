@@ -17,8 +17,8 @@
     $item->created = date('Y-m-d H:i:s');
     
     if($item->createEmployee()){
-        echo 'Employee created successfully.';
+        echo json_encode(['message'=>'Employee created successfully.']);
     } else{
-        echo 'Employee could not be created.';
+        echo json_encode(['message'=>'Employee could not be created.']);
     }
 ?>

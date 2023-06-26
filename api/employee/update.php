@@ -25,8 +25,8 @@
     $item->created = date('Y-m-d H:i:s');
     
     if($item->updateEmployee()){
-        echo json_encode("Employee data updated.");
+        echo json_encode(['message'=>'Employee updated successfully.']);
     } else{
-        echo json_encode("Data could not be updated");
+        echo json_encode(['message'=>'Employee could not be updated.']);
     }
 ?>
